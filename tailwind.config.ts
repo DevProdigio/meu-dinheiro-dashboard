@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Space Grotesk", "system-ui", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +60,24 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        emerald: {
+          500: "hsl(160 84% 39%)",
+        },
+        blue: {
+          500: "hsl(217 91% 60%)",
+        },
+        purple: {
+          500: "hsl(271 81% 56%)",
+        },
+        amber: {
+          500: "hsl(38 92% 50%)",
+        },
+        rose: {
+          500: "hsl(350 89% 60%)",
+        },
+        slate: {
+          500: "hsl(215 16% 47%)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +101,21 @@ export default {
             height: "0",
           },
         },
+        "fade-in": {
+          from: {
+            opacity: "0",
+            transform: "translateY(10px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.3s ease-out",
       },
     },
   },
